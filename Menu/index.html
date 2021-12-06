@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
 
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#ADFF2F;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #8FBC8F;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #006400;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #8FBC8F;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<img src='logo_smekisone-removebg-preview.png' height="100" width="100"> 
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <img src='logo_smekisone-removebg-preview.png' height="100" width="100">
+  <a href="#">HOME</a>  
+  <a href="Data_guru.php">DATA GURU</a>
+  <a href="Data_siswa.php">DATA SISWA</a>
+  <a href="#">ABOUT</a>
+  <a href="#">SERVICE</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">= Click Me</button> 
+  <h1>SMK Islam 1 Durenan sebagai SMK pusat keunggulan</h1>
+  <img src='pichome0001.jpg' height="500" width="1300">
+  <p>SMK Islam 1 Durenan berdiri pada tahun 1988 dan berada di bawah naungan Lembaga Pendidikan Ma’Arif NU Kabupaten Trenggalek. 
+  Pada awal berdiri SMK Islam 1 Durenan membuka 2 jurusan yakni: Administrasi Perkantoran (Sekretaris) & Akuntansi, dengan jumlah peserta didik angkatan pertama adalah 156 siswa yang di bagi menjadi 4 (empat) kelas. 
+  Pada awal tahun ajaran 2003/2004 SMK Islam 1 Durenan menambah jurusan baru yakni Teknik Komputer dan Jaringan dan Tata Busana, pada tahun 2010/2011 menambah jurusan baru lagi yaitu Multimedia. 
+  Selanjutnya, untuk Tahun 2015/2016 menambah 3 Jurusan lagi yakni: Animasi, TKJ Axioo dan Pemasaran.
+  Hingga saat ini, SMK Islam 1 Durenan memiliki enam jurusan unggulan yakni Teknik Komputer dan Jaringan (TKJ), Multimedia (MM), Animasi (ANM), Pemasaran (PMS) Alfamart, Akuntansi dan Keuangan Lembaga (AKL), dan Otomatisasi Tata Kelola Perkantoran (OTKP). 
+  Lebih dari 30 tahun mengabdi dalam dunia pendidikan, SMK Islam 1 Durenan terbukti makin dipercaya masyarakat dan dunia industri. Banyak industri yang menjadi mitra pendidikan dan mitra kerja bagi SMK Islam 1 Durenan, diantaranya Alfamart Class, Axioo Class Program, Oracle Academy, Indomart, KS-TV, dan masih banyak lagi. 
+  Selain itu, SMK Islam 1 Durenan juga aktif dalam menyukseskan berbagai program pemerintah baik yang secara langsung berkenaan dengan pendidikan atau pun yang bersifat sosial kemasyarakatan. Sebagai wujud bukti dari profesionalisme kerja dan pengabdian, SMK Islam 1 Durenan sejak tahun 2014 telah bersertifikat SNM ISO 9001:2008.</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
