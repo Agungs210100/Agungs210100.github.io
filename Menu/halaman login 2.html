@@ -1,22 +1,24 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-	<head>
-		<title>Halaman Login</title>
-		<link rel="stylesheet" href="desain margin.css">
-	</head>
-	
-	<body>
-		<div align="center">
-		<div class="container">
-		<img src='logo_smekisone-removebg-preview.png' height="100" width="100"> 
-			<h1>Login</h1>
-			<form>
-			    <label>Username</label><br>
-				<input type="text"><br>
-				<label>Password</label><br>
-				<input type=""><br>
-				<button>Log in</button>
-			</form>
-		</div>
-	</body>
+<head>
+<title>Halaman Login</title>
+<script type="text/javascript">
+  function masuk() {
+  var username = document.login.username.value;
+  var password = document.login.password.value;
+  if (username == "123" && password == "123") {
+      alert("Anda berhasil login!");
+  }
+  else {
+      alert("Maaf, username atau password yang Anda masukkan salah.");
+  }
+}
+</script>
+</head>
+<form action="menu.html" method="get">
+Username : <input type="text" name="username">
+Password : <input type="password" name="password">
+<input type="submit" name="submit" value="Login"> 
+</form>
+</body>
 </html>
